@@ -10,6 +10,7 @@ const tockenCheck = require('../middlewares/tockencheck')
 router.post('/addDesignation',tockenCheck,admin.addDesignation)
 router.post('/addLocation' , tockenCheck ,admin.addLocation)
 router.post('/addUser', tockenCheck, admin.addUser)
+router.patch('/editUser', tockenCheck, admin.editUser)
 
 
 router.delete('/deleteUser', tockenCheck, admin.deleteUser)
